@@ -6,6 +6,8 @@ import auth from '../../firebase.init';
 import './Login.css';
 import icon from '../../images/login-logo.png';
 import Loading from '../SharePage/Loading/Loading';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Login = () => {
     const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
@@ -21,7 +23,9 @@ const Login = () => {
     const emailRef = useRef('');
     const passwordRef = useRef('');
     const navigate = useNavigate();
-
+    if (loading || loading1) {
+        return <Loading></Loading>;
+    }
     if (error) {
         return (
             <div>
@@ -89,6 +93,7 @@ const Login = () => {
             </div>
             <div className='sign-btn'>
                 <span><img height={30} src={icon} alt="" /><Button className='' onClick={() => signInWithGoogle()}>Google Sign In</Button></span>
+                <ToastContainer />
             </div>
         </>
     );

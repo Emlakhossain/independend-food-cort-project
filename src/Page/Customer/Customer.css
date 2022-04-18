@@ -1,0 +1,24 @@
+.clicents-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
+
+.client {
+    border: 1px solid gray;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.client img {
+    width: 100%;
+}
+
+@media only screen and (max-width:595px) {
+    .clicents-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
