@@ -11,7 +11,7 @@ const OrderPage = (props) => {
             <h2>{serviceId}</h2>
             <p>{serviceId.name}</p>
 
-            <Link to='/bookingfood'><button className='btn btn-warning '>Place Order</button></Link>
+            <Link to='/bookingfood'><button className='btn btn-warning '>Check Out Order</button></Link>
 
 
         </div>
