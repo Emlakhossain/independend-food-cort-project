@@ -13,7 +13,7 @@ const Login = () => {
     const [signInWithGoogle, user1, loading1, error1] = useSignInWithGoogle(auth);
     const location = useLocation();
 
-    let from = location.state?.from?.pathname || "/";
+    const from = location.state?.from?.pathname || "/";
     const [
         signInWithEmailAndPassword,
         user,
