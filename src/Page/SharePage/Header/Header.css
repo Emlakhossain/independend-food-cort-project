@@ -1,0 +1,16 @@
+.sign-out {
+    height: 28px;
+    font-size: 16px;
+    margin: 5px;
+    border: none;
+}
+
+.sign-out:hover {
+    background-color: orange;
+    border: 1px solid black;
+    color: black;
+}
+
+.logo-img {
+    background-color: rgb(167, 162, 153);
+}

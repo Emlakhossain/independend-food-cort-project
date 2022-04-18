@@ -17,7 +17,7 @@ const Service = ({ service }) => {
                     <h5 class="card-title">{name}</h5>
                     <p class="card-text"> <small>{description}</small></p>
                     <p><small>Price:${price}</small></p>
-                    <button onClick={() => handleOrderBtn(id)} className='btn btn-warning text-white fw-bold'>Go To Order</button>
+                    <button onClick={() => handleOrderBtn(id)} className='btn btn-warning text-white fw-bold'>{name}</button>
                 </div>
             </div>
         </div>
